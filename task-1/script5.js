@@ -2,7 +2,7 @@
 
 let price;
 let country;
-let message;
+
 
 country = prompt("Укажите страну доставки");
 country = country.toUpperCase();
