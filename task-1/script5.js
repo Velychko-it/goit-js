@@ -1,35 +1,44 @@
 "use strict";
 
 let price;
-let country;
+
+let message;
 
 
-country = prompt("Укажите страну доставки");
-country = country.toUpperCase();
+const country = prompt("Укажите страну доставки");
+// country = country.toUpperCase();
 
-switch (country) {
+switch (country.toUpperCase()) {
   case "CHINA":
     price = 100;
+    message = `доствка в  ${country} будет стоить ${price} кредитов`
     break;
+
 
   case "CHILI":
     price = 250;
+    message = `доствка в  ${country} будет стоить ${price} кредитов`
     break;
 
   case "AUSTRALIA":
     price = 170;
+    message = `доствка в  ${country} будет стоить ${price} кредитов`
     break;
 
   case "INDIA":
     price = 80;
+    message = `доствка в  ${country} будет стоить ${price} кредитов`
     break;
 
   case "JAMAIKA":
     price = 120;
+    message = `доствка в  ${country} будет стоить ${price} кредитов`
     break;
 
     default:
-        alert('доставка сюда не осуществляеться ');
+        message = 'доставка сюда не осуществляеться ';
+        
+       
 }
 
-alert(`доствка в  ${country} будет стоить ${price} кредитов `);
+alert(message);
